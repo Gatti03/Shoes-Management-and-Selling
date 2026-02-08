@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatti Shoes Point - Women's Jordan Shoes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <?php include('../components/header.html'); ?>
+
+    <main>
+        <h1>Women's Jordan Shoes</h1>
+        <div class="product-list">
+            <!-- Product cards will be dynamically loaded here -->
+            <?php include('../php/products.php'); ?>
+            <?php displayWomenProducts(); ?>
+        </div>
+    </main>
+
+    <?php include('../components/footer.html'); ?>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Jordan Shoes - Gatti Shoes Point</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <?php include('../components/header.html'); ?>
+
+    <main>
+        <h1>Men's Jordan Shoes Collection</h1>
+        <div class="product-list">
+            <!-- Product cards will be dynamically loaded here -->
+            <?php
+            include('../php/products.php');
+            $products = getMenJordanShoes(); // Function to fetch men's Jordan shoes
+            foreach ($products as $product) {
+                include('../components/product-card.html');
+            }
+            ?>
+        </div>
+    </main>
+
+    <?php include('../components/footer.html'); ?>
+    <script src="../js/main.js"></script>
+</body>
+</html>
